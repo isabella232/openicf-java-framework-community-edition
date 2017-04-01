@@ -93,7 +93,7 @@
                             <goals>
                                 <goal>clean</goal>
                                 <goal>verify</goal>
-                                <goal>site</goal>
+                                <!-- <goal>site</goal> -->
                             </goals>
                             <settingsFile>src/it/settings.xml</settingsFile>
                             <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
