@@ -25,7 +25,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.forgerock.openicf.framework</groupId>
+        <groupId>org.forgerock.ce.openicf.framework</groupId>
         <artifactId>framework</artifactId>
         <version>1.1.2.0</version>
     </parent>
@@ -39,7 +39,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.forgerock.openicf.framework</groupId>
+            <groupId>org.forgerock.ce.openicf.framework</groupId>
             <artifactId>connector-framework</artifactId>
         </dependency>
 
@@ -51,7 +51,7 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.forgerock.openicf.framework</groupId>
+            <groupId>org.forgerock.ce.openicf.framework</groupId>
             <artifactId>connector-test-common</artifactId>
             <scope>provided</scope>
             <optional>true</optional>
@@ -68,20 +68,20 @@
             <artifactId>fest-assert-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.forgerock.openicf.framework</groupId>
+            <groupId>org.forgerock.ce.openicf.framework</groupId>
             <artifactId>connector-framework</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <!-- Force to build the test bundles before -->
         <dependency>
-            <groupId>org.forgerock.openicf.framework</groupId>
+            <groupId>org.forgerock.ce.openicf.framework</groupId>
             <artifactId>testbundlev1</artifactId>
             <version>1.1.2.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.forgerock.openicf.framework</groupId>
+            <groupId>org.forgerock.ce.openicf.framework</groupId>
             <artifactId>testbundlev2</artifactId>
             <version>1.1.2.0</version>
             <scope>test</scope>
@@ -120,11 +120,11 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>org.forgerock.openicf.framework</groupId>
+                                    <groupId>org.forgerock.ce.openicf.framework</groupId>
                                     <artifactId>testbundlev1</artifactId>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.forgerock.openicf.framework</groupId>
+                                    <groupId>org.forgerock.ce.openicf.framework</groupId>
                                     <artifactId>testbundlev2</artifactId>
                                 </artifactItem>
                             </artifactItems>

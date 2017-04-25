@@ -26,11 +26,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.forgerock.openicf.framework</groupId>
+        <groupId>org.forgerock.ce.openicf.framework</groupId>
         <artifactId>framework</artifactId>
         <version>1.1.2.0</version>
     </parent>
-    <groupId>org.forgerock.openicf.connectors</groupId>
+    <groupId>org.forgerock.ce.openicf.connectors</groupId>
     <artifactId>connectors-parent</artifactId>
     <packaging>pom</packaging>
     <name>OpenICF Connectors Parent</name>
@@ -131,18 +131,18 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.forgerock.openicf.framework</groupId>
+            <groupId>org.forgerock.ce.openicf.framework</groupId>
             <artifactId>connector-framework</artifactId>
         </dependency>
 
         <!-- Test Dependencies -->
         <dependency>
-            <groupId>org.forgerock.openicf.framework</groupId>
+            <groupId>org.forgerock.ce.openicf.framework</groupId>
             <artifactId>connector-test-common</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.forgerock.openicf.framework</groupId>
+            <groupId>org.forgerock.ce.openicf.framework</groupId>
             <artifactId>connector-framework-contract</artifactId>
             <scope>test</scope>
         </dependency>
@@ -335,7 +335,7 @@
                     </configuration>
                 </plugin>
                 <plugin>
-                    <groupId>org.forgerock.maven.plugins</groupId>
+                    <groupId>org.forgerock.ce.maven.plugins</groupId>
                     <artifactId>openicf-maven-plugin</artifactId>
                     <version>1.0.0</version>
                 </plugin>
@@ -345,7 +345,7 @@
     <reporting>
         <plugins>
             <plugin>
-                <groupId>org.forgerock.maven.plugins</groupId>
+                <groupId>org.forgerock.ce.maven.plugins</groupId>
                 <artifactId>openicf-maven-plugin</artifactId>
                 <version>1.0.0</version>
             </plugin>
@@ -374,14 +374,14 @@
                                 <configuration>
                                     <artifactItems>
                                         <artifactItem>
-                                            <groupId>org.forgerock.openicf.framework</groupId>
+                                            <groupId>org.forgerock.ce.openicf.framework</groupId>
                                             <artifactId>connector-framework-contract</artifactId>
                                             <outputDirectory>
                                                 ${project.build.directory}/contractClasses
                                             </outputDirectory>
                                         </artifactItem>
                                         <artifactItem>
-                                            <groupId>org.forgerock.openicf.framework</groupId>
+                                            <groupId>org.forgerock.ce.openicf.framework</groupId>
                                             <artifactId>connector-framework-contract</artifactId>
                                             <classifier>sources</classifier>
                                             <outputDirectory>
@@ -474,7 +474,7 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.forgerock.maven.plugins</groupId>
+                        <groupId>org.forgerock.ce.maven.plugins</groupId>
                         <artifactId>openicf-maven-plugin</artifactId>
                         <executions>
                             <execution>
@@ -485,7 +485,7 @@
                         </executions>
                     </plugin>
                     <plugin>
-                        <groupId>org.forgerock.commons</groupId>
+                        <groupId>org.forgerock.ce.commons</groupId>
                         <artifactId>forgerock-doc-maven-plugin</artifactId>
                         <inherited>true</inherited>
                         <configuration>
